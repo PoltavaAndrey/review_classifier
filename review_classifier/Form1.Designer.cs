@@ -39,9 +39,9 @@ namespace review_classifier
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(236, 39);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Start processing";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.button2_Click);
             // 
             // button2
             // 
@@ -49,12 +49,13 @@ namespace review_classifier
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(236, 39);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "To Result\r\n\r\n";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
