@@ -41,7 +41,7 @@ namespace review_classifier
             this.button1.TabIndex = 0;
             this.button1.Text = "Start processing";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button2_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
