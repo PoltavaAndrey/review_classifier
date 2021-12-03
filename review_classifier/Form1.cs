@@ -24,7 +24,9 @@ namespace review_classifier
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ResultForm form = new ResultForm();
+            form.Show();
+            this.Hide();
         }
     }
 }
