@@ -39,7 +39,7 @@ namespace review_classifier
             start.Arguments = string.Format("{0} -c \"{1}\"", path, "worst app!");
             start.UseShellExecute = false;
             start.RedirectStandardOutput = false;
-            using (Process process = new Process())
+            using (Process process = Process.Start(start))
             {
                 using (StreamReader reader = process.StandardOutput)
                 {
