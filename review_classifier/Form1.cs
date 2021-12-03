@@ -21,7 +21,7 @@ namespace review_classifier
         {
             ResultForm form = new ResultForm();
             form.Show();
-            this.Hide();
+            Hide();
         }
     }
 }
