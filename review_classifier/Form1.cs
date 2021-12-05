@@ -29,7 +29,7 @@ namespace review_classifier
         private void button1_Click(object sender, EventArgs e)
         {
             ProcessStartInfo start = new ProcessStartInfo();
-            start.FileName = @"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\python.exe";
+            start.FileName = @"C:\Users\Andrey\Desktop\c++ projects\4 курс\review_classifier\review_classifier\analytics\venv\Scripts\python.exe";
 
             string curDir = Directory.GetCurrentDirectory();
             DirectoryInfo directoryInfo = Directory.GetParent(curDir);
@@ -38,7 +38,7 @@ namespace review_classifier
 
             start.Arguments = string.Format("{0} -c \"{1}\"", path, "worst app!");
             start.UseShellExecute = false;
-            start.RedirectStandardOutput = false;
+            start.RedirectStandardOutput = true;
             using (Process process = Process.Start(start))
             {
                 using (StreamReader reader = process.StandardOutput)
