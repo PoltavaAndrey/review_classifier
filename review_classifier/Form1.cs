@@ -18,35 +18,24 @@ namespace review_classifier
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ResultForm form = new ResultForm();
-            form.Show();
-            Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo start = new ProcessStartInfo();
-            start.FileName = @"C:\Users\Andrey\Desktop\c++ projects\4 курс\review_classifier\review_classifier\analytics\venv\Scripts\python.exe";
-
-            string curDir = Directory.GetCurrentDirectory();
-            DirectoryInfo directoryInfo = Directory.GetParent(curDir);
-            DirectoryInfo directoryInfo2 = Directory.GetParent(directoryInfo.FullName);
-            string path = directoryInfo2.FullName + @"\analytics\api.py";
-
-            start.Arguments = string.Format("{0} -c \"{1}\"", path, "worst app!");
-            start.UseShellExecute = false;
-            start.RedirectStandardOutput = true;
-            using (Process process = Process.Start(start))
-            {
-                using (StreamReader reader = process.StandardOutput)
-                {
-                    string result = reader.ReadToEnd();
-                    MessageBox.Show(result);
-                }
-            }
-        }
     }
 }
+//ProcessStartInfo start = new ProcessStartInfo();
+//start.FileName = @"C:\Users\Andrey\Desktop\c++_projects\4_class\review_classifier\review_classifier\analytics\venv\Scripts\python.exe";
+
+//string curDir = Directory.GetCurrentDirectory();
+//DirectoryInfo directoryInfo = Directory.GetParent(curDir);
+//DirectoryInfo directoryInfo2 = Directory.GetParent(directoryInfo.FullName);
+//string path = directoryInfo2.FullName + @"\analytics\api.py";
+
+//start.Arguments = string.Format("{0} -c \"{1}\"", path, "worst app!");
+//start.UseShellExecute = false;
+//start.RedirectStandardOutput = true;
+//using (Process process = Process.Start(start))
+//{
+//    using (StreamReader reader = process.StandardOutput)
+//    {
+//        string result = reader.ReadToEnd();
+//        MessageBox.Show(result);
+//    }
+//}
