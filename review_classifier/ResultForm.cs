@@ -16,5 +16,10 @@ namespace review_classifier
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Visible = true;
+        }
     }
 }
