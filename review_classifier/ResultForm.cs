@@ -23,3 +23,4 @@ namespace review_classifier
         }
     }
 }
+//https://metanit.com/sharp/entityframeworkcore/7.1.php
